@@ -1,2 +1,2 @@
 # UNIVR-physicaHumanRobotIinteraction
-Physical Human Rotob Interaction (PHRI) project
+Physical Human Robot Interaction (PHRI) project
