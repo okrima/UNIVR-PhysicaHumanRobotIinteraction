@@ -1,6 +1,11 @@
 
-clear all
+%clear all
 
+load_system("Master_Slave_Model");
+stopTime = get_param('Master_Slave_Model','StopTime');
+stopTime = str2double(stopTime);
+
+Ts = 0.001;
 % --- parameters ---
 
 %% Prefilter
@@ -34,9 +39,16 @@ Kp_h = 1.2;
 Kd_h = 0.5;
 Fc_h = 5; % (Hz)
 
+beta = 2*pi*Fc_h*Ts / (1+2*pi*Fc_h*Ts);
+
 %% Human ARM
 Jh = 0.02;
-Bh = 0.02;
+%Bh = 0.02;
+
+Kh = 50;
+Kh_max = 200;
+
+Fh_star = 10;   % N
 
 %% Passivity controller gains for master robot
 Kp_m = 0.01;
@@ -46,20 +58,10 @@ Kd_m = 0.005;
 Kp_s = 1;
 Kd_s = 0.5;
 
-%% Impedance Controller
-Bs = 1;
-Ks = 1;
-
 %% UPDATE PASSIVE OBSERVER
 dt = 0.01;
 
-%% TELE-IMPEDANCE PARAMETERES
-damping_ratio = 0.7;
-K_h_hat_lin = 400;
-K_h_hat_ang = K_h_hat_lin/80;
-B_h_hat = 2*damping_ratio*sqrt(K_h_hat_ang);
-
 %% TIME DELAY
-delayCommM2S = 1;
-delayCommS2M = 1;
+delayCommM2S = 0;
+delayCommS2M = 0;
 
