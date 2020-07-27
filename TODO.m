@@ -13,6 +13,6 @@
     %una posizione, successivamente da filtrare e stimare la velocità con
     %il filtro di Kalman o il metodo di Eulero con un filtro passa basso.
 
-%5. Collegare la variabile di stiffness ai controllori di transizione Zzc e
+%5[DONE]. Collegare la variabile di stiffness ai controllori di transizione Zzc e
     %Azc e cercare di inserire la funzione di stiffness all'interno della
     %funzione di trasferimento

@@ -26,7 +26,7 @@ tau_s = 1.217;
 %% Environment PD
 lArm_m = 0.1; % m
 lArm_s = 0.1; % m
-qe = 1; % environment position (rad)
+qe = 10; % environment position (rad)
 Be = 5;
 Ke = 10;
 
@@ -43,12 +43,11 @@ beta = 2*pi*Fc_h*Ts / (1+2*pi*Fc_h*Ts);
 
 %% Human ARM
 Jh = 0.02;
-%Bh = 0.02;
-
-Kh = 50;
+Bh = 0.02;
+Kh = 25;
 Kh_max = 200;
 
-Fh_star = 10;   % N
+Fh_star = 1;   % N
 
 %% Passivity controller gains for master robot
 Kp_m = 0.01;
