@@ -43,9 +43,9 @@ beta = 2*pi*Fc_h*Ts / (1+2*pi*Fc_h*Ts);
 
 %% Human ARM
 Jh = 0.02;
-Bh = 0.02;
+Bh = 2;
 Kh = 25;
-Kh_max = 200;
+Kh_max = 100;
 
 Fh_star = 1;   % N
 
