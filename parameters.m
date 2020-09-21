@@ -26,7 +26,7 @@ tau_s = 1.217;
 %% Environment PD
 lArm_m = 0.1; % m
 lArm_s = 0.1; % m
-qe = 10; % environment position (rad)
+qe = 1; % environment position (rad)
 Be = 5;
 Ke = 10;
 
@@ -44,7 +44,7 @@ beta = 2*pi*Fc_h*Ts / (1+2*pi*Fc_h*Ts);
 %% Human ARM
 Jh = 0.02;
 Bh = 2;
-Kh = 25;
+Kh = 3;     %Stiffness per 10cm di displacement e una forza di reazione di 3Kg
 Kh_max = 100;
 
 Fh_star = 1;   % N
