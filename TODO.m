@@ -18,14 +18,14 @@
     %funzione di trasferimento
     
 %% 11/09/2020 
-%1 Aggiungere una K nel modello dell'operatore e la K metto dentro lo schema a blocchi (valore fisso): 
+%1 Aggiungere una K nel modello dell'operatore e la metto dentro lo schema a blocchi (valore fisso): 
 %  vedere come si comporta il sistema.
 
 %2 Caso base, operatore modellato con una molla gli diamo (1/Kh) su Ah e poi la derivata 
 %  (fare la derivata numerica e un filtro passa basso).
 %  1.[DONE] Implementare l'architettura non usando la Kh taglio A e Z;
-%  2. Assumo come Kh il valore vero di Kh inserito nel modello (caso ideale);
-%  3. Controllare se aumenta le prestazioni, con free motion e in contatto con 
+%  2.[DONE] Assumo come Kh il valore vero di Kh inserito nel modello (caso ideale);
+%  3.[DONE] Controllare se aumenta le prestazioni, con free motion e in contatto con 
 %     ambiente e monitorare le forze di reazione devono essere uguali;
 
 %3 Aggiungo Kh e monitoriamo le prestazioni per vedere se funziona.
