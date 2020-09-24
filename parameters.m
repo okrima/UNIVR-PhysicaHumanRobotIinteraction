@@ -5,7 +5,6 @@ load_system("Master_Slave_Model");
 stopTime = get_param('Master_Slave_Model','StopTime');
 stopTime = str2double(stopTime);
 
-Ts = 0.001;
 % --- parameters ---
 
 %% Prefilter
@@ -26,7 +25,7 @@ tau_s = 1.217;
 %% Environment PD
 lArm_m = 0.1; % m
 lArm_s = 0.1; % m
-qe = 10; % environment position (rad)
+qe = 0.9; % environment position (rad)
 Be = 5;
 Ke = 10;
 
@@ -42,12 +41,13 @@ Fc_h = 5; % (Hz)
 beta = 2*pi*Fc_h*Ts / (1+2*pi*Fc_h*Ts);
 
 %% Human ARM
-Jh = 0.02;
-Bh = 2;
-Kh = 3;     %Stiffness per 5cm di displacement e una forza di reazione di 3Kg
-Kh_max = 25;
+Jh = 0.002;
+%Bh = 2;
+Kh = 25;    
+Bh = 2*0.7*sqrt(Kh);
+Kh_max = 50;
 
-Fh_star = 1;   % N
+Fh_star = 25;   % N
 
 %% Passivity controller gains for master robot
 Kp_m = 0.01;
@@ -61,6 +61,6 @@ Kd_s = 0.5;
 dt = 0.01;
 
 %% TIME DELAY
-delayCommM2S = 0;
-delayCommS2M = 0;
+delayCommM2S = 250;
+delayCommS2M = 250;
 
