@@ -32,6 +32,34 @@
 
 %4 Vedere di sovrastimare e sottostimare la Kh.
 
+%% 29/09/2020
+%1. Sistemare i grafici in modo che per una sola variabile ci siano più
+%scope, ad esempio per le posizioni inserire in un unico grafico le varie
+%posizioni
+%2. Cambiare Fh_star, togliere quello che si ha implementato e inserire il
+%controllore che genera l'intenzione dell'operatore e far ritornare una
+%posizione ritardata.
+%3. Modificare i riferimenti, da forze a posizioni.
+%4. Per grafici a contatto con l'ambiente inserire anche le posizioni.
+%5. Anzichè monitorare le forze, occorre monitorare le coppie, in
+%particolare 4 coppie: 
+%   - Coppia dell'operatore;
+%   - Coppia del robot master;
+%   - Coppia del robot slave;
+%   - Coppia dell'interazione con l'ambiente.
+%6. Scaricare il .bin delle presentazioni in LateX,
+%7. Quando si monitorano nuove modifiche, occorre inserire nel grafico le
+%modifiche della versione precedente (linee tratteggiate).
+%8. Se il sistema oscilla, modificare il comportamento dell'ambiente
+%(rendere molla e smorzatore più morbidi/rigidi). E valutare di avvicinare
+%l'ambiente.
+%9. Vedere come si comporta il sistema con POPC e senza POPC e modificare
+%il ritardo partendo da 0 fino al valore di instabilità (senza POPC).
+%10. Stare attento a variabili che bisogna discretizzare e variabili che
+%devono essere continue.
+%11. Aggiungere il rumore di misura su posizioni e forze.
+%12. Effettuare simulazioni con e senza PoPc, modificando il ritardo e
+%analizzare il comportamento.
 
 
 
