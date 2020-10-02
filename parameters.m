@@ -65,3 +65,5 @@ dt = 0.01;
 delayCommM2S = 250;
 delayCommS2M = 250;
 
+VideoDelay = 0.25;
+
