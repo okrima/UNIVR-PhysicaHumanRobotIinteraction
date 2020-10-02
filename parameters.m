@@ -32,6 +32,7 @@ Ke = 10;
 %% Numerical derivative
 beta_s = 10;
 Ts = 0.001;
+Variance = 0.0001;
 
 %% Human PD
 Kp_h = 1.2;
