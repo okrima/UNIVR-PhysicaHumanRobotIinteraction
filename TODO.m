@@ -55,7 +55,7 @@
 %l'ambiente.
 %9. Vedere come si comporta il sistema con POPC e senza POPC e modificare
 %il ritardo partendo da 0 fino al valore di instabilità (senza POPC).
-%10. Stare attento a variabili che bisogna discretizzare e variabili che
+%10[123 - DONE]. Stare attento a variabili che bisogna discretizzare e variabili che
 %devono essere continue.
 %11. Aggiungere il rumore di misura su posizioni e forze.
 %12. Effettuare simulazioni con e senza PoPc, modificando il ritardo e

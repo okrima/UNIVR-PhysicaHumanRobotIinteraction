@@ -32,7 +32,6 @@ Ke = 10;
 %% Numerical derivative
 beta_s = 10;
 Ts = 0.001;
-Variance = 0.000001;
 
 %% Human PD
 Kp_h = 1.2;
@@ -62,6 +61,6 @@ Kd_s = 0.5;
 dt = 0.01;
 
 %% TIME DELAY
-delayCommM2S = 0;
-delayCommS2M = 0;
+delayCommM2S = 250;
+delayCommS2M = 250;
 
