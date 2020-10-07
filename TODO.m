@@ -36,17 +36,17 @@
 %1. Sistemare i grafici in modo che per una sola variabile ci siano più
 %scope, ad esempio per le posizioni inserire in un unico grafico le varie
 %posizioni
-%2. Cambiare Fh_star, togliere quello che si ha implementato e inserire il
-%controllore che genera l'intenzione dell'operatore e far ritornare una
-%posizione ritardata.
-%3. Modificare i riferimenti, da forze a posizioni.
+%2. [DONE 1]. Cambiare Fh_star, togliere quello che si ha implementato e inserire il
+%controllore che genera l'intenzione dell'operatore e inserire una
+%posizione e velocità ritardata.
+%3. [DONE 1]. Modificare i riferimenti, da forze a posizioni.
 %4. Per grafici a contatto con l'ambiente inserire anche le posizioni.
 %5. Anzichè monitorare le forze, occorre monitorare le coppie, in
 %particolare 4 coppie: 
-%   - Coppia dell'operatore;
-%   - Coppia del robot master;
-%   - Coppia del robot slave;
-%   - Coppia dell'interazione con l'ambiente.
+%   - [DONE 1]. Coppia dell'operatore;
+%   - [DONE 1]. Coppia del robot master;
+%   - [DONE 1]. Coppia del robot slave;
+%   - [DONE 1]. Coppia dell'interazione con l'ambiente.
 %6. Scaricare il .bin delle presentazioni in LateX,
 %7. Quando si monitorano nuove modifiche, occorre inserire nel grafico le
 %modifiche della versione precedente (linee tratteggiate).
@@ -55,9 +55,9 @@
 %l'ambiente.
 %9. Vedere come si comporta il sistema con POPC e senza POPC e modificare
 %il ritardo partendo da 0 fino al valore di instabilità (senza POPC).
-%10[123 - DONE]. Stare attento a variabili che bisogna discretizzare e variabili che
+%10 [123 - DONE]. Stare attento a variabili che bisogna discretizzare e variabili che
 %devono essere continue.
-%11. Aggiungere il rumore di misura su posizioni[DONE] e forze.
+%11. Aggiungere il rumore di misura su posizioni[DONE 1] e forze[DONE 1].
 %12. Effettuare simulazioni con e senza PoPc, modificando il ritardo e
 %analizzare il comportamento.
 
