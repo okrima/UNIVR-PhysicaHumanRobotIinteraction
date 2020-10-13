@@ -34,25 +34,19 @@ Ke = 10;
 Ts = 0.001;
 Variance = 0.000001;
 
-A = [1 Ts; 0 1];
-B = [(Ts^2)/2; Ts];
-q = 10000;
-Q = B*B'*q;
-C = [1 0];
-R = 1;
 
 %% Human PD
 Kp_h = 1.2;
 Kd_h = 0.5;
-Fc_h = 1; % (Hz)
+Fc_h = 10; % (Hz)
 
 beta = 2*pi*Fc_h*Ts / (1+2*pi*Fc_h*Ts);
 
 %% Human ARM
 Jh = 0.002;
-Bh = 2;
-Kh = 1;    
-%Bh = 2*0.7*sqrt(Kh);
+%Bh = 2;
+Kh = 3;    
+Bh = 2*0.7*sqrt(Kh);
 Kh_max = 50;
 
 %Fh_star = 25;   % N
@@ -64,10 +58,10 @@ Kd_m = 0.005;
 
 %% Passivity controller gains for slave robot
 Kp_s = 1;
-Kd_s = 0.5;
+Kd_s = 1.5;
 
 %% UPDATE PASSIVE OBSERVER
-dt = 0.01;
+dt = 0.001;
 
 %% TIME DELAY
 delayCommM2S = 0;
@@ -75,3 +69,6 @@ delayCommS2M = 0;
 
 VideoDelay = 0;
 
+%Kalman Modeling
+A = [1 Ts;0 1];
+C = [1 0];
